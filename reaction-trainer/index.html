@@ -1,0 +1,45 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>Reaction Trainer</title>
+        
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+        
+        <link rel="stylesheet" type="text/css" href="reactiontrainer.css">
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        
+        <script src="reactiontrainer.js"></script> 
+        
+    </head>
+    
+    <body onload="pageLoaded()">
+        <div id="main-div">
+        
+            <h1>Reaction Trainer</h1>
+            
+            <p>Click the button below to begin.  The button will turn red
+               for a short time.  When it turns green click it as quickly
+               as you can.  Do not click the button early or the game
+               will reset.</p>
+               
+            <div id="thebutton"></div>
+            
+            <!--Button click handler-->
+            
+            <script type="text/javascript">
+            
+                $(function()
+                {
+                    $("#thebutton").click(function(evt)
+                    {
+                       buttonClicked();
+                    });
+                }
+                );
+            
+            </script>
+            
+        </div>
+    </body>
+</html>
